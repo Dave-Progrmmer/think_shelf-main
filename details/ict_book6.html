@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/global.css">
+    <title>ICT Book 6 | Thinkers Shelf</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="../index.html" class="logo">Thinkers <span class="logo-span">Shelf</span></a>
+        <ul class="navlist">
+            <li><a href="../index.html" class="navlink">Home</a></li>
+            <li><a href="../books.html" class="navlink">Books</a></li>
+            <li><a href="../about.html" class="navlink">About</a></li>
+            <li><a href="../clients.html" class="navlink">Clients</a></li>
+            <li><a href="../contact.html" class="navlink">Contact</a></li>
+        </ul>
+        <a class="btn btn-outline" href="../cart.html" data-cart-count>Cart (0)</a>
+    </nav>
+    <main class="detail-layout container">
+        <div class="detail-image-container">
+            <img class="detail-cover" src="../assets/images/ict_book6.jpg" alt="ICT Book 6" />
+        </div>
+        <div class="detail-info">
+            <h1>ICT Book 6</h1>
+            <div class="author">By Various Authors</div>
+            <div class="price">₦27,000</div>
+            <div class="detail-description">
+                <p>Systems programming basics and operating system internals, with hands-on exercises.</p>
+            </div>
+            <div class="detail-buttons" style="margin-top: 2rem; display: flex; gap: 1rem;">
+                <button class="btn btn-primary" data-add-to-cart data-id="ict_book6" data-title="ICT Book 6" data-price="27000" data-image="../assets/images/ict_book6.jpg">Add to Cart</button>
+                <a class="btn btn-outline" href="../books.html">Back to Books</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">© <span id="year"></span> Thinkers Shelf. All rights reserved.</div>
+        <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    </footer>
+    <script src="../cart.js"></script>
+</body>
+</html>

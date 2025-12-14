@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/global.css">
+    <title>About Us | Thinkers Shelf</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">Thinkers <span class="logo-span">Shelf</span></a>
+        <ul class="navlist">
+            <li><a href="index.html" class="navlink">Home</a></li>
+            <li><a href="books.html" class="navlink">Books</a></li>
+            <li><a href="about.html" class="navlink">About</a></li>
+            <li><a href="clients.html" class="navlink">Clients</a></li>
+            <li><a href="contact.html" class="navlink">Contact</a></li>
+        </ul>
+        <a class="btn btn-outline" href="cart.html" data-cart-count>Cart (0)</a>
+    </nav>
+
+    <header class="hero-section">
+        <div class="hero-content container">
+            <h1 class="hero-title">Our Story</h1>
+            <p class="hero-subtitle">On a mission to spark curiosity with Science and ICT books.</p>
+        </div>
+    </header>
+
+    <section class="container" style="max-width: 800px; text-align: center; margin-bottom: 4rem;">
+        <h2 class="section-title">Mission</h2>
+        <p style="font-size: 1.25rem; color: var(--text-secondary); line-height: 1.8;">
+            We connect learners and professionals to thoughtful Science and ICT titles, helping them level up skills and understanding through curated selections and a delightful shopping experience.
+        </p>
+    </section>
+
+    <section class="container" style="margin-bottom: 4rem;">
+        <h2 class="section-title">Leadership</h2>
+        <div class="clients-grid">
+            <div class="client-card">
+                <img src="assets/images/CEO.jpg" alt="CEO" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover;" />
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">© <span id="year"></span> Thinkers Shelf. All rights reserved.</div>
+        <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    </footer>
+    <script src="cart.js"></script>
+</body>
+</html>

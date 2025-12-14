@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/global.css">
+    <title>Your Cart | Thinkers Shelf</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">Thinkers <span class="logo-span">Shelf</span></a>
+        <ul class="navlist">
+            <li><a href="index.html" class="navlink">Home</a></li>
+            <li><a href="books.html" class="navlink">Books</a></li>
+            <li><a href="about.html" class="navlink">About</a></li>
+            <li><a href="clients.html" class="navlink">Clients</a></li>
+            <li><a href="contact.html" class="navlink">Contact</a></li>
+        </ul>
+        <a class="btn btn-outline" href="cart.html" data-cart-count>Cart (0)</a>
+    </nav>
+
+    <header class="hero-section">
+        <div class="hero-content container">
+            <h1 class="hero-title">Your Cart</h1>
+            <p class="hero-subtitle">Review items and proceed to checkout.</p>
+        </div>
+    </header>
+
+    <section class="container cart-page">
+        <div id="cart-mount"></div>
+        <div style="display:flex; justify-content: flex-end; align-items:center; margin-top:2rem; gap: 1rem;">
+            <div style="color:var(--text-secondary); font-size: 1.25rem;">Total:</div>
+            <div id="cart-total-amount" style="color:var(--accent-gold); font-weight:800; font-size: 2rem;">₦0</div>
+        </div>
+        <div class="button-group" style="margin-top:2rem; display: flex; justify-content: flex-end; gap: 1rem;">
+            <a class="btn btn-outline" href="books.html">Continue shopping</a>
+            <a class="btn btn-primary" href="checkout.html">Proceed to checkout</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">© <span id="year"></span> Thinkers Shelf. All rights reserved.</div>
+        <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    </footer>
+    <script src="cart.js"></script>
+</body>
+</html>

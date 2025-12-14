@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/global.css">
+    <title>Thinker Shelf</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">Thinkers <span class="logo-span">Shelf</span></a>
+        <ul class="navlist">
+            <li><a href="index.html" class="navlink">Home</a></li>
+            <li><a href="books.html" class="navlink">Books</a></li>
+            <li><a href="about.html" class="navlink">About</a></li>
+            <li><a href="clients.html" class="navlink">Clients</a></li>
+            <li><a href="contact.html" class="navlink">Contact</a></li>
+        </ul>
+        <a class="btn btn-outline" href="cart.html" data-cart-count>Cart (0)</a>
+    </nav>
+    <header class="hero-section">
+        <div class="hero-content container">
+            <h1 class="hero-title">Discover Science and ICT Books</h1>
+            <p class="hero-subtitle">Curated titles spanning astrophysics, biology, algorithms, systems, and more.</p>
+            <a href="books.html" class="btn btn-primary">Browse Books</a>
+        </div>
+    </header>
+    <section class="books-section container">
+        <h2 class="section-title">Featured Books</h2>
+        <p class="section-subtitle">Hand-picked reads from our Science and ICT collections</p>
+        <div class="books-grid">
+            <div class="book-card">
+                <div class="book-cover" style="background-image:url('assets/images/science_book1.jpg')"></div>
+                <div class="book-content">
+                    <h3 class="book-title">Astrophysics Basics</h3>
+                    <p class="book-author">By N. Carter</p>
+                    <p class="book-description">Explore the cosmos, from stellar birth to black holes.</p>
+                    <div class="book-actions">
+                        <span class="price-tag">₦18,000</span>
+                        <a href="details/science_book1.html" class="btn btn-primary">View</a>
+                        <button class="btn btn-outline" data-add-to-cart data-id="science_book1" data-title="Astrophysics Basics" data-price="18000" data-image="assets/images/science_book1.jpg">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div class="book-card">
+                <div class="book-cover" style="background-image:url('assets/images/ict_book1.jpg')"></div>
+                <div class="book-content">
+                    <h3 class="book-title">Intro to Programming</h3>
+                    <p class="book-author">By J. Smith</p>
+                    <p class="book-description">A gentle, practical start to modern software building.</p>
+                    <div class="book-actions">
+                        <span class="price-tag">₦15,500</span>
+                        <a href="details/ict_book1.html" class="btn btn-primary">View</a>
+                        <button class="btn btn-outline" data-add-to-cart data-id="ict_book1" data-title="Intro to Programming" data-price="15500" data-image="assets/images/ict_book1.jpg">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div class="book-card">
+                <div class="book-cover" style="background-image:url('assets/images/science_book5.jpg')"></div>
+                <div class="book-content">
+                    <h3 class="book-title">Genetics Unlocked</h3>
+                    <p class="book-author">By S. Patel</p>
+                    <p class="book-description">A lucid tour through DNA, genes, and heredity.</p>
+                    <div class="book-actions">
+                        <span class="price-tag">₦22,000</span>
+                        <a href="details/science_book5.html" class="btn btn-primary">View</a>
+                        <button class="btn btn-outline" data-add-to-cart data-id="science_book5" data-title="Genetics Unlocked" data-price="22000" data-image="assets/images/science_book5.jpg">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div class="book-card">
+                <div class="book-cover" style="background-image:url('assets/images/ict_book4.jpg')"></div>
+                <div class="book-content">
+                    <h3 class="book-title">Clean Code Craft</h3>
+                    <p class="book-author">By R. Martin</p>
+                    <p class="book-description">Principles and practices for writing maintainable code.</p>
+                    <div class="book-actions">
+                        <span class="price-tag">₦28,000</span>
+                        <a href="details/ict_book4.html" class="btn btn-primary">View</a>
+                        <button class="btn btn-outline" data-add-to-cart data-id="ict_book4" data-title="Clean Code Craft" data-price="28000" data-image="assets/images/ict_book4.jpg">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div class="book-card">
+                <div class="book-cover" style="background-image:url('assets/images/science_book9.jpg')"></div>
+                <div class="book-content">
+                    <h3 class="book-title">Quantum Realities</h3>
+                    <p class="book-author">By L. Nguyen</p>
+                    <p class="book-description">From wavefunctions to entanglement, made approachable.</p>
+                    <div class="book-actions">
+                        <span class="price-tag">₦30,000</span>
+                        <a href="details/science_book9.html" class="btn btn-primary">View</a>
+                        <button class="btn btn-outline" data-add-to-cart data-id="science_book9" data-title="Quantum Realities" data-price="30000" data-image="assets/images/science_book9.jpg">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div class="book-card">
+                <div class="book-cover" style="background-image:url('assets/images/ict_book9.jpg')"></div>
+                <div class="book-content">
+                    <h3 class="book-title">Algorithms Illustrated</h3>
+                    <p class="book-author">By T. Cormen</p>
+                    <p class="book-description">Core data structures and algorithms, demystified.</p>
+                    <div class="book-actions">
+                        <span class="price-tag">₦35,000</span>
+                        <a href="details/ict_book9.html" class="btn btn-primary">View</a>
+                        <button class="btn btn-outline" data-add-to-cart data-id="ict_book9" data-title="Algorithms Illustrated" data-price="35000" data-image="assets/images/ict_book9.jpg">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">© <span id="year"></span> Thinkers Shelf. All rights reserved.</div>
+        <script>
+            document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
+    </footer>
+    <script src="cart.js"></script>
+</body>
+</html>
